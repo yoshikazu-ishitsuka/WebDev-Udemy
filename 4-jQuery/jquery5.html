@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>jQuery</title>
+  <style>
+    #circle {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      background-color: green;
+    }
+
+  </style>
+</head>
+<body>
+  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> -->
+  <script src="jquery-3.5.1.min.js"></script>
+
+  <div id="circle"></div>
+  
+  <script type="text/javascript">
+  $("#circle").click(function(){
+      $("#circle").animate({
+        width:"400px",
+        height: "400px", 
+        marginLeft:"100px"
+      }, 
+        2000, // 2秒で
+        function(){
+        $("#circle").css("background-color","red");
+      });
+  })
+
+</script>
+</body>
+</html>

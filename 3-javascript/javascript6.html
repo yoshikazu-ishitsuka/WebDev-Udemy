@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JavaScript</title>
+</head>
+<body>
+  <div id="tweetsDiv"></div>
+  <script type="text/javascript">
+
+  /*
+    for(var i = 5; i > 0; i--){
+      alert(i);
+    }
+  */
+    var tweets = ["Morning!", "Good Day!", "Dinner!", "Good Night!", "Nice Dream!"];
+    var tweetString =""; //初期化
+    // for(var i = 0; i < tweets.length; i++){
+      // alert(tweets[i]);
+    var i = 0;
+    while(i < tweets.length){
+      tweetString = tweetString + "<p>" + tweets[i] + "</p>";
+      i++;
+    }
+    document.getElementById("tweetsDiv").innerHTML = tweetString;
+    
+  </script>
+</body>
+</html>

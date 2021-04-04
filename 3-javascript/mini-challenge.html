@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <style type="text/css">
+    #c-red{
+      background-color: red;
+    }
+    #c-blue{
+      background-color: blue;
+    }
+    #c-yellow{
+      background-color: yellow;
+    }
+    .circle{
+      width: 100px;
+      height: 100px;
+      float: left;
+      margin: 40px;
+      border-radius: 50%;
+    }
+  </style>
+
+</head>
+<body>
+  <div id="c-red" class="circle"></div>
+  <div id="c-blue" class="circle"></div>
+  <div id="c-yellow" class="circle"></div>
+
+  <script type="text/javascript">
+    document.getElementById('c-red').onclick = function(){
+        document.getElementById('c-red').style.display = 'none';
+    }
+    document.getElementById('c-blue').onclick = function (params) {
+        document.getElementById('c-blue').style.display = 'none';
+    }
+    document.getElementById('c-yellow').onclick = function (params) {
+        document.getElementById('c-yellow').style.display = 'none';
+    }
+  </script>
+
+</body>
+</html>

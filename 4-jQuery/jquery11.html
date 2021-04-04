@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="jquery-ui/jquery-ui.css">
+  <title>jQuery</title>
+
+  <style>
+    /* #resize1 {width: 200px; height: 200px; background-color: aquamarine;} */
+    /* #sortable {} */
+  </style>
+
+  <script src="jquery-3.5.1.min.js"></script>
+  <script src="jquery-ui/jquery-ui.js"></script>
+
+  <script type="text/javascript">
+    $(function () {
+      $("#sortable").sortable();
+      // $("#sortable").disableSelection();
+    });
+
+
+  </script>
+
+
+</head>
+
+<body>
+
+  <ul id="sortable">
+    <li>Item1</li>
+    <li>Item2</li>
+    <li>Item3</li>
+    <li>Item4</li>
+    <li>Item5</li>
+    <li>Item6</li>
+    <li>Item7</li>
+  </ul>
+
+
+</body>
+
+</html>

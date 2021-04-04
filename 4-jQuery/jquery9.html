@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="jquery-ui/jquery-ui.css">
+  <title>jQuery</title>
+
+  <style>
+    /* #resize1 {width: 200px; height: 200px; background-color: aquamarine;} */
+    #drag {width: 100px; height: 100px; padding: 0.5em; float: left; background-color: aqua; margin: 20px;}
+    #drop {width: 200px; height: 200px; padding: 0.5em; float: left; background-color: aquamarine;}
+  </style>
+
+<script src="jquery-3.5.1.min.js"></script>
+<script src="jquery-ui/jquery-ui.js"></script>
+
+<script type="text/javascript">
+  $(function(){
+    $("#drag").draggable();
+    $("#drop").droppable({
+      drop: function(event, ui){
+        $(this)
+        .addClass("ui-state-highlight")
+        .find("p").html("ドロップされましたよ！");
+      }
+    });
+  })
+
+</script>
+
+
+</head>
+
+<body>
+
+  <div id="drag">
+    <h3>ドラッグします</h3>
+  </div>
+
+  <div id="drop">
+    <p>ドロップしてください</p>
+  </div>
+  
+</body>
+</html>

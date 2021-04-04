@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JavaScript</title>
+
+  <style type="text/css">
+    #c-red {
+      background-color: red;
+    }
+    #c-blue {
+      background-color: blue;
+    }
+    #c-yellow {
+      background-color: yellow;
+    }
+
+    .circle {
+      border-radius: 50%;
+      width: 100px;
+      height: 100px;
+      float: left;
+      margin: 40px;
+    }
+
+  </style>
+
+</head>
+<body>
+    <p id="text">Hello World!</p>
+    <button id="myButton">Change Text!</button>
+
+    <script type="text/javascript">
+      document.getElementById("myButton").onclick = function(){
+        // alert("ボタンがクリックされました！");
+        document.getElementById("text").innerHTML = "クリックしましたね"
+      }
+      // パラグラフのコンテンツを更新する処理
+      /*
+        getElementByIdは、ID名を指定してブロック要素を取り出します。
+        innerHTMLは、その中のコンテンツ（テキスト）を取り出します。
+      */
+      // document.getElementById("text").innerHTML = "Hello Rob!"
+    </script>
+
+    <p id="secondParagraph">JavaScriptは、</p>
+    <button id="secondButton">追記する！</button>
+
+    <p id="thirdParagraph">スタイルを変更してみましょう！</p>
+    <button id="changeStyle">スタイルを変更する！</button><br>
+
+
+    <script type="text/javascript">
+      document.getElementById("secondButton").onclick = function(){
+      //   document.getElementById("secondParagraph").innerHTML = 
+      //     document.getElementById("secondParagraph").innerHTML + "ブラウザでもサーバサイドでも動作するプログラミング言語です";
+      // 文字列を追記する、appendする。
+      document.getElementById("secondParagraph").innerHTML += "ブラウザでもサーバサイドでも動作するプログラミング言語です";
+      }
+
+      document.getElementById("changeStyle").onclick = function() {
+        // document.getElementById("thirdParagraph").style.color = "red";
+        document.getElementById("thirdParagraph").style.display = "none";
+      }
+    </script>
+
+    <div id="c-red" class="circle"></div>
+    <div id="c-blue" class="circle"></div>
+    <div id="c-yellow" class="circle"></div>
+
+    <script type="text/javascript">
+      document.getElementById("c-red").onclick = function(){
+        document.getElementById("c-red").style.display = "none";
+      }
+      document.getElementById("c-blue").onclick = function(){
+        document.getElementById("c-blue").style.display = "none";
+      }
+      document.getElementById("c-yellow").onclick = function(){
+        document.getElementById("c-yellow").style.display = "none";
+      }
+
+    </script>
+</body>
+</html>

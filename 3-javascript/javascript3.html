@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JavaScript</title>
+  <style type="text/css"></style>
+</head>
+<body>
+  <p><input type="text" id="inputForm">ここに名前を入力してください</p> 
+
+  <button id="submitButton">送信する</button>
+
+  <p id="newMessage"></p>
+  <script type="text/javascript">
+    document.getElementById("submitButton").onclick = function(){
+      var name = ""; // <= 文字列型変数の宣言
+      name = document.getElementById("inputForm").value;//入力フォームの内容をnameに渡す
+      // alert(name);
+      document.getElementById("newMessage").innerHTML = name + "さん、以下が申し込み内容になります。"//innerHTMLで埋め込む
+    }
+    // var x = 5;
+    // alert(x);
+  </script>
+</body>
+</html>

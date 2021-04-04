@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JavaScript</title>
+</head>
+
+<body>
+    <button onclick="alert('Hi Rob')">Click me!</button>
+    <p id="text">Hello World</p>
+    <button id="myButton">Change Text</button>
+  
+    <script type="text/JavaScript">
+        document.getElementById('myButton').onclick = function() {
+            // alert('ボタンがクリックされました！');
+            document.getElementById('text').innerHTML = "クリックしましたね"
+        }
+    </script>
+
+    <p id="secondParagraph">JavaScriptは、</p>
+    <button id="secondButton">追記する</button>
+
+    <p id="thirdParagraph">スタイルを変更してみましょう</p>
+    <button id="changeStyle">スタイルを変更する</button>
+
+    <script type="text/JavaScript">
+        document.getElementById("secondButton").onclick = function() {
+          // document.getElementById('secondParagraph').innerHTML = 
+          //     document.getElementById('secondParagraph').innerHTML + "ブラウザでもサーバーサイドでも動作するプログラミング言語です";
+          // 文字列を追記する、appendする。
+          document.getElementById('secondParagraph').innerHTML += "ブラウザでもサーバーサイドでも動作するプログラミング言語です";
+        }
+
+        document.getElementById('changeStyle').onclick = function (params) {
+          // document.getElementById('thirdParagraph').style.color = 'red';
+          document.getElementById("thirdParagraph").style.display = "none";
+        }
+    </script>
+
+</body>
+
+</html>

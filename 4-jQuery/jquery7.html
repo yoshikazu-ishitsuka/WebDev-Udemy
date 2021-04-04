@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="jquery-ui/jquery-ui.css">
+  <title>jQuery</title>
+
+  <style>
+    #draggable{
+      width: 150px;
+      height: 150px;
+      padding: 0.5em;
+      background-color: aqua;
+    }
+    #container {
+      width: 800px;
+      height: 500px;
+      background-color: aquamarine;
+    }
+    #draggable2 {
+      width: 200px;
+      height: 100px;
+      background-color: coral;
+    }
+
+  </style>
+
+<script src="jquery-3.5.1.min.js"></script>
+<script src="jquery-ui/jquery-ui.js"></script>
+
+<script type="text/javascript">
+  $(function() {
+    $("#draggable").draggable({ axis: "y" }); //functionがないとこの場所（head内）では動かないよ
+    // $("#draggable").draggable({ axis: "x" });
+    $("#draggable2").draggable({ containment: "parent" })
+
+  } );
+</script>
+
+
+</head>
+
+<body>
+  <div id="draggable">
+    <p>ドラッグしてくださいね</p>
+  </div>
+
+  <div id="container">
+    <div id="draggable2">このDivは指定された範囲内で動かせます。</div>
+  </div>
+  
+</body>
+</html>

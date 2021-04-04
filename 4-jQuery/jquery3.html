@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>jQuery</title>
+  <style>
+    #green-circle{
+      background-color: green;
+      border-radius: 50%;
+      width: 100px;
+      height: 100px;
+      margin: 10px;
+    }
+    .square {
+      width: 100px;
+      height: 100px;
+      margin: 10px;
+      background-color: red;
+    }
+
+  </style>
+</head>
+<body>
+  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> -->
+  <script src="jquery-3.5.1.min.js"></script>
+  
+<div id="green-circle" class="circle"></div>
+<div class="square"></div>
+<div class="square"></div>
+
+<script type="text/javascript">
+  $("div").click(function(){
+    /*
+    $(".circle").css("width", "300px");
+    $(".circle").css("height", "300px");
+    $("#green-circle").css("background-color", "red");
+    // alert("円がクリックされました！");
+    */
+
+    // alert($(".circle").css("width"));
+    // alert($(".circle").css("background-color"));
+    $(this).css("display", "none");
+  })
+
+  </script>
+
+</body>
+</html>
