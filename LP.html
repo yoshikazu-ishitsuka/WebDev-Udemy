@@ -10,17 +10,18 @@
     integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
   <link rel="stylesheet" href="style.css">
+  <script type="text/javascript" src="main.js"></script>
 
 
   <title>Document</title>
 </head>
 
-<body>
+<body data-spy="scroll" data-target="#navbar" data-offset="150">
 
   <div class="container-fluid">
 
     <!-- navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top" id="navbar">
       <a class="navbar-brand" href="#">MyApp</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -29,19 +30,19 @@
 
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+          <li class="nav-item">
+            <a class="nav-link" href="#jumbotron">Home <span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">About</a>
+            <a class="nav-link" href="#about">About</a>
           </li>
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+            <a class="nav-link dropdown-toggle" href="#app" id="navbarDropdown" role="button" data-toggle="dropdown"
               aria-haspopup="true" aria-expanded="false">
               Download The App
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#action">Action</a>
               <a class="dropdown-item" href="#">Another action</a>
               <div class="dropdown-divider"></div>
               <a class="dropdown-item" href="#">Something else here</a>
@@ -57,7 +58,7 @@
     </nav>
 
     <!-- jumbotron -->
-    <div class="jumbotron jumb-image">
+    <div class="jumbotron jumb-image" id="jumbotron">
       <!-- <img
         src="https://images.unsplash.com/photo-1617917572835-5ab878656dcf?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
         class="img-fluid" alt="Responsive image"> -->
@@ -95,7 +96,7 @@
       </div>
     </div>
 
-    <div class="container mb-5">
+    <div class="container mb-5" id="about">
 
       <div class="card-group">
         <div class="card">
@@ -132,7 +133,7 @@
     </div>
 
 
-    <div class="container-fluid">
+    <div class="container-fluid" id="app">
 
       <div class="jumbotron jumb-image-under text-center">
         <h1 class="display-4">Download the App!</h1>

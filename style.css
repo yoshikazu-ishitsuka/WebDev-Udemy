@@ -22,3 +22,7 @@
   /* size: 200px 69px; */
   width: 200px;
 }
+
+body {
+  position: relative;
+}
