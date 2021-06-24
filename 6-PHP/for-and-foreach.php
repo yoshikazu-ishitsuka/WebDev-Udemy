@@ -23,8 +23,11 @@ for($i = 0; $i < sizeof($family); $i++){
 echo "<br><br>";
 
 foreach ($family as $key => $value){
-    // echo $key . ": ", $value . ",";
-    $family[$key] = $value . " Percival";
-    echo $family[$key] . ", ";
+    // $familyの各要素を$key:$valueのセットで取り出す
+    echo $key . ": ". $value . ",";
+    // $family[$key] = $value . " Percival";
+    // echo $family[$key] . ", ";
 }
+
+
 ?>
